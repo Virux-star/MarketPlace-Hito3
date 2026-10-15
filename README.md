@@ -97,5 +97,23 @@ npm run dev
 Para ejecutar la suite de pruebas unitarias y de integración sobre las rutas:
 
 ```Bash
+cd back_market/
 npm test
+```
+
+## 🧪 Resultado de la Ejecución de Tests
+
+```text
+PASS test/server.test.js
+  Pruebas de la API de Market (Hito 3)
+    ✓ GET /posts debe responder con status 200 y un array (168 ms)
+    ✓ GET /posts/999999 debe responder con status 404 cuando la publicación no existe (32 ms)
+    ✓ POST /login debe responder con status 401 si las credenciales son incorrectas (51 ms)
+    ✓ GET /users/me debe responder con status 401 al intentar acceder sin Token (24 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        1.015 s
+Ran all test suites.
 ```
