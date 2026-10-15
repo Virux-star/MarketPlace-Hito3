@@ -60,7 +60,6 @@ Rutas Privadas (Requieren Authorization: Bearer <token>)
 - `GET /favorites` - Obtener los productos marcados como favoritos por el usuario.
 - `POST /favorites` - Agregar un producto a favoritos.
 - `DELETE /favorites/:id` - Eliminar un producto de favoritos.
-```
 
 🚀 Instrucciones de Ejecución
 
