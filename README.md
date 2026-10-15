@@ -51,15 +51,15 @@ Rutas Públicas
 - `POST /login` - Autenticación de usuario y retorno de Token JWT.
 - `POST /users` - Registro de nuevos usuarios.
 - `GET /posts` - Obtener el catálogo general de publicaciones.
-- `GET /posts/:id - Obtener el detalle de una publicación específica.
+- `GET /posts/:id` - Obtener el detalle de una publicación específica.
 
 Rutas Privadas (Requieren Authorization: Bearer <token>)
-```
--- GET /users/me - Obtener datos del perfil del usuario autenticado.
--- POST /posts - Crear una nueva publicación en el catálogo.
--- GET /favorites - Obtener los productos marcados como favoritos por el usuario.
--- POST /favorites - Agregar un producto a favoritos.
--- DELETE /favorites/:id - Eliminar un producto de favoritos.
+
+- `GET /users/me` - Obtener datos del perfil del usuario autenticado.
+- `POST /posts` - Crear una nueva publicación en el catálogo.
+- `GET /favorites` - Obtener los productos marcados como favoritos por el usuario.
+- `POST /favorites` - Agregar un producto a favoritos.
+- `DELETE /favorites/:id` - Eliminar un producto de favoritos.
 ```
 
 🚀 Instrucciones de Ejecución
@@ -71,6 +71,7 @@ Tener una instancia de PostgreSQL en ejecución (local o en Docker) e importar e
 Crea un archivo .env en la raíz de back_market basándote en el siguiente formato:
 
 Fragmento de código
+
 ```bash
 PORT=3000
 DB_HOST=localhost
