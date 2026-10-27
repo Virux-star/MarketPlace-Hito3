@@ -4,6 +4,12 @@ Este repositorio contiene la **API REST** desarrollada en Node.js y Express para
 
 ---
 
+## 🚀 Despliegue en la Nube (Deploy Activo)
+
+- **Backend (API REST Live):** [https://back-market-38t1.onrender.com/](https://back-market-38t1.onrender.com/)
+- **Base de Datos:** PostgreSQL en Render (`marketplace_t7aq`)
+---
+
 ## 📋 Descripción del Desafío
 
 El objetivo principal de este hito es levantar un servidor backend robusto capaz de:
@@ -45,7 +51,7 @@ back_market/
 └── package.json        # Dependencias y scripts de ejecución
 ```
 
-🌐 Endpoints de la API REST
+## 🌐 Endpoints de la API REST
 Rutas Públicas
 
 - `POST /login` - Autenticación de usuario y retorno de Token JWT.
@@ -61,15 +67,24 @@ Rutas Privadas (Requieren Authorization: Bearer <token>)
 - `POST /favorites` - Agregar un producto a favoritos.
 - `DELETE /favorites/:id` - Eliminar un producto de favoritos.
 
-🚀 Instrucciones de Ejecución
+## 🚀 Instrucciones de Ejecución
 
 1. Requisitos Previos
 Tener una instancia de PostgreSQL en ejecución (local o en Docker) e importar el script SQL dentro de la carpeta BD/.
 
-2. Configurar Variables de Entorno
-Crea un archivo .env en la raíz de back_market basándote en el siguiente formato:
+2. Variables de Entorno
 
-Fragmento de código
+## 🔐 Variables de Entorno (.env)
+```bash
+PORT=3000
+DATABASE_URL=postgresql://marketplace_t7aq_user:PASSWORD@dpg-dbb32b6q1p3s73dlfcu0-a.oregon-postgres.render.com/marketplace_t7aq
+JWT_SECRET=tu_clave_secreta_jwt
+```
+## ⚙️ Ejecución en Entorno Local
+```bash
+git clone https://github.com/walcorpar/MarketPlace-Hito3.git
+```
+Crea un archivo .env en la raíz de back_market basándote en el siguiente formato:
 
 ```bash
 PORT=3000
